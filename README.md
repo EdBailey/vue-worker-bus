@@ -10,7 +10,7 @@ More detailed readme TBA
 ```JS
 import VueWorkerBus from 'vue-worker-bus'
 
-exampleWorker = new VueWorkerBus(new ExampleWebWorker())
+exampleWorker = new VueWorkerBus(new Worker('worker.js'))
 
 exampleWorker.$on('foo', (payload) => {
   console.log(payload)
